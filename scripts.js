@@ -2,17 +2,20 @@ var data = {
   title: 1,
   description: "“Senior security engineer on his way to deliver comments to developers”",
   image_url: "http://67.media.tumblr.com/fa1ba165f49884d3339f156ca6ed5493/tumblr_o5ztxr9ZRr1ugyavxo1_1280.jpg",
-}
+};
 
-// setInterval(function () {
-//   data.title += 1;
-//   console.log(data.title);
-// }, 1000);
+$.getJSON('http://whateverorigin.org/get?url=' + encodeURIComponent('http://classicprogrammerpaintings.com/random') + '&callback=?', function(data){
+  var el = $( '<div></div>' );
+  el.html(data.contents);
+  image_url = $('section#posts .photo-wrapper img', el)[0].src;
+  infos = _.map($('section#posts figcaption.caption p', el), "textContent");
 
-axios.get("http://classicprogrammerpaintings.com/post/142321815809/hieronymus-bosch-a-visual-guide-to-the-scala")
-  .then(function (response) {
-    console.log(response);
+  console.log({
+    image_url: image_url,
+    title: infos[0],
+    description: _.tail(infos).join(', '),
   });
+});
 
 new Vue({
   el: '#app',
