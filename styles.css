@@ -6,6 +6,7 @@
   height: 120%;
   background-size: cover;
   background-position: center;
+  -webkit-filter: blur(20px) brightness(70%);
   filter: blur(20px) brightness(70%);
 }
 
