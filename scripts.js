@@ -22,6 +22,6 @@ new Vue({
     that = this;
     setInterval(function () {
       that.reloadPainting();
-    }, 5000);
+    }, 300000);
   }
 });

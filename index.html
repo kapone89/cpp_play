@@ -14,13 +14,16 @@
     <body id="app">
         <div id="background" style="background-image: url({{ image_url }})"></div>
         <div id="painting" style="background-image: url({{ image_url }})"></div>
-        <div id="description">
-          <h1 id="painting-title">
+        <div id="info">
+          <h1 id="info-title">
             {{ title }}
           </h1>
+          <p id="info-description">
+            {{ description }}
+          </p>
         </div>
-        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.12.0/lodash.min.js"></script>
+        <script src="libs/jquery.min.js"></script>
+        <script src="libs/lodash.min.js"></script>
         <script src="libs/vue.js"></script>
         <script src="scripts.js"></script>
     </body>

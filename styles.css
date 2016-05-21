@@ -20,19 +20,24 @@
   background-repeat: no-repeat;
 }
 
-#description {
+#info {
   position: fixed;
   bottom: 0px;
   left: 0px;
   width: 100%;
-  height: 12%;
+  height: 20%;
   background-color: rgba(0, 0, 0, 0.33);
   overflow: hidden;
   white-space: nowrap;
   padding-left: 2%;
 }
 
-#painting-title {
+#info-title {
   color: white;
   font-size: 5.0vh;
+}
+
+#info-description {
+  color: white;
+  font-size: 3.5vh;
 }
