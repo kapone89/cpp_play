@@ -9,6 +9,11 @@ var data = {
 //   console.log(data.title);
 // }, 1000);
 
+axios.get("http://classicprogrammerpaintings.com/post/142321815809/hieronymus-bosch-a-visual-guide-to-the-scala")
+  .then(function (response) {
+    console.log(response);
+  });
+
 new Vue({
   el: '#app',
   data: {
