@@ -12,8 +12,13 @@
     </head>
 
     <body id="app">
-        <div id="background"></div>
-        <div id="painting"></div>
+        <div id="background" style="background-image: url({{ image_url }})"></div>
+        <div id="painting" style="background-image: url({{ image_url }})"></div>
+        <div id="description">
+          <h1 id="painting-title">
+            {{ description }}
+          </h1>
+        </div>
         <script src="libs/vue.js"></script>
         <script src="scripts.js"></script>
     </body>

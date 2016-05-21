@@ -1,7 +1,7 @@
 var data = {
   title: 1,
-  description: "",
-  image_url: "",
+  description: "“Senior security engineer on his way to deliver comments to developers”",
+  image_url: "http://67.media.tumblr.com/fa1ba165f49884d3339f156ca6ed5493/tumblr_o5ztxr9ZRr1ugyavxo1_1280.jpg",
 }
 
 // setInterval(function () {
@@ -12,6 +12,8 @@ var data = {
 new Vue({
   el: '#app',
   data: {
-    title: data.title
+    title: data.title,
+    description: data.description,
+    image_url: data.image_url,
   }
 })
