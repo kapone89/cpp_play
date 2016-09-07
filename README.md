@@ -1,3 +1,3 @@
 # classicprogrammerpaintings.com player
 
-Try it here: http://rawgit.com/kapone89/cpp_play/master/index.html
+Try it here: http://cpp.kapone89.ml
