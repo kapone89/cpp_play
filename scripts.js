@@ -1,9 +1,9 @@
 new Vue({
   el: '#app',
   data: {
-    title: "“Last sprint before the deadline”",
-    description: "Józef Chełmoński, 1881, Oil on Canvas",
-    image_url: "http://65.media.tumblr.com/868169650b9c0520b3ccf88a96b9e9de/tumblr_o632v3uxOW1ugyavxo1_1280.jpg",
+    title: "",
+    description: "",
+    image_url: "",
   },
   methods: {
     reloadPainting: function () {
@@ -29,6 +29,7 @@ new Vue({
   },
   ready: function () {
     that = this;
+    this.reloadPainting();
     setInterval(function () {
       that.reloadPainting();
     }, 300000);
